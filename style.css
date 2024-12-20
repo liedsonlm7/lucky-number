@@ -1,0 +1,140 @@
+/* Reset básico */
+body, h1, h3, p, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #20ec75, #2575fc);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Título principal */
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Labels e inputs */
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 2px solid #20ec75;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fff;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    border-color: #2575fc;
+}
+
+button {
+    background: #09bd15;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #068212;
+    transform: translateY(-3px);
+}
+
+/* Números gerados */
+.numbers {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    margin: 20px 0;
+    background: #e6e6fa;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Histórico */
+.history h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.history {
+    text-align: left;
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+.history-item {
+    background: #20ec75;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 5px solid #066a22;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #0c401e;
+    font-weight: 900;
+}
+
+
+
+/* Botão "Adicionar Mais Sequências" */
+#addMoreBtn {
+    display: none; /* Escondido inicialmente */
+    background: #09bd15;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#addMoreBtn:hover {
+    background: #036631;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Números</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Números Aleatórios</h1>
+        <label for="quantity">Escolha a quantidade de números:</label>
+        <select id="quantity">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <button onclick="generateNumbers()">Gerar Números</button>
+        <button onclick="generateTenSequences()">Gerar 10 Sequências</button>
+        <div class="history">
+            <h3>Sequências Geradas:</h3>
+        <div id="history"></div>
+        </div>
+        <button id="addMoreBtn" onclick="clearHistory()" style="display: none;">Adicionar Mais Sequências</button>
+
+        <div class="numbers" id="numbers"></div>
+        <div class="history">
+            <h3>Últimas 10 Sequências:</h3>
+            <div id="history"></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
